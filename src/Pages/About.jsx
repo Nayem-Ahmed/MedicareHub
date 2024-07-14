@@ -6,11 +6,11 @@ import { FaCheckCircle } from 'react-icons/fa';
 
 const About = () => {
     return (
-        <div className='flex  gap-20 px-8 my-10'>
-            <div className='w-1/2'>
-                <img className='h-[500px] object-cover border-r-8 border-t-8  border-[#12CBC4]' src={aboutPic} alt="" />
+        <div className='flex flex-col md:flex-row md:gap-20 gap-5 px-8 my-10'>
+            <div className='md:w-1/2'>
+                <img className='h-[545px] object-cover border-r-8 border-t-8  border-[#12CBC4]' src={aboutPic} alt="" />
             </div>
-            <div className='w-1/2'>
+            <div className='md:w-1/2'>
                 <p className='text-[#12CBC4] mb-4 font-semibold'>About Us</p>
                 <h1 className='lg:text-3xl md:text-2xl text-[#130f40] font-bold mb-4'>Your Reliable Partner in Certified <br></br> Healthcare Solutions</h1>
                 <p className="text-md text-[#525252] mb-6">
@@ -35,6 +35,9 @@ const About = () => {
                         <div><FaCheckCircle className='text-[#12CBC4] mr-2 text-xl' /></div> <span>  Continuously improving our programs and approaches to vaccination.</span>
                     </li>
                 </ul>
+                <button className="lg:px-5 px-3 shadow-2xl shadow-slate-900 md:py-2 py-1 border-b-4  bg-[#f39c12]  font-semibold  text-white border-teal-500 hover:bg-[#12CBC4] active:scale-95 transition-transform ">
+                    About Us
+                </button>
             </div>
         </div>
     );
