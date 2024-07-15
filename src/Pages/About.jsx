@@ -6,7 +6,7 @@ import { FaCheckCircle } from 'react-icons/fa';
 
 const About = () => {
     return (
-        <div className='flex flex-col md:flex-row md:gap-20 gap-5 px-8 my-10'>
+        <div className='flex flex-col md:flex-row md:gap-20 gap-5 md:px-8 px-5 my-10'>
             <div className='md:w-1/2'>
                 <img className='h-[545px] object-cover border-r-8 border-t-8  border-[#12CBC4]' src={aboutPic} alt="" />
             </div>
@@ -31,9 +31,7 @@ const About = () => {
                     <li className='flex items-center mb-3'>
                         <div><FaCheckCircle className='text-[#12CBC4] mr-2 text-xl' /></div> <span> Fostering a culture of health and well-being.</span>
                     </li>
-                    <li className='flex items-center mb-3'>
-                        <div><FaCheckCircle className='text-[#12CBC4] mr-2 text-xl' /></div> <span>  Continuously improving our programs and approaches to vaccination.</span>
-                    </li>
+ 
                 </ul>
                 <button className="lg:px-5 px-3 shadow-2xl shadow-slate-900 md:py-2 py-1 border-b-4  bg-[#f39c12]  font-semibold  text-white border-teal-500 hover:bg-[#12CBC4] active:scale-95 transition-transform ">
                     About Us

@@ -5,7 +5,7 @@ import bannerPerson from '../../assets/banner.png';
 const Banner = () => {
     return (
         <div className="relative bg-center" style={{ backgroundImage: `url(${banner})` }}>
-            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between px-8 h-full overflow-hidden">
+            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between md:px-8 px-5 h-full overflow-hidden">
                 <div className=" max-w-2xl mb-6 md:mb-0">
                     <h1 className="lg:text-5xl  text-2xl text-[#130f40] font-bold mb-4">Safeguarding Health</h1>
                     <h1 className="lg:text-5xl  text-2xl text-[#130f40] font-bold mb-4">with Vaccination</h1>

@@ -9,7 +9,7 @@ import servicescaerd6 from '../assets/arthritis.png';
 
 const Services = () => {
     return (
-        <div style={{ backgroundImage: `url(${servicesbg})` }} className='md:px-8 px-4 bg-cover bg-center'>
+        <div style={{ backgroundImage: `url(${servicesbg})` }} className='md:px-8 px-5 bg-cover bg-center'>
             <div className='py-5'>
                 <div className='max-w-xl mx-auto text-center'>
                     <p className='text-[#12CBC4] mb-4 font-semibold'>Our Services</p>
@@ -19,8 +19,8 @@ const Services = () => {
                     </p>
                 </div>
 
-                <div className='grid  lg:grid-cols-3  gap-5 mt-10'>
-                    <div className="bg-white bg-opacity-70 p-10 rounded-lg text-center shadow-lg max-w-sm mx-auto">
+                <div className='grid md:grid-cols-3 grid-cols-1  gap-5 mt-10'>
+                    <div className="bg-white bg-opacity-70 p-10 rounded-lg text-center shadow-lg  mx-auto">
                         <div className="mb-4">
                             <img className="w-24 mx-auto border-4 border-[#12CBC4] rounded-full p-2" src={servicescaerd1} alt="Service Icon" />
                         </div>
@@ -30,7 +30,7 @@ const Services = () => {
                             Learn More
                         </button>
                     </div>
-                    <div className="bg-white bg-opacity-70 p-10 rounded-lg text-center shadow-lg max-w-sm mx-auto">
+                    <div className="bg-white bg-opacity-70 p-10 rounded-lg text-center shadow-lg  mx-auto">
                         <div className="mb-4">
                             <img className="w-24 mx-auto border-4 border-[#12CBC4] rounded-full p-2" src={servicescaerd2} alt="Service Icon" />
                         </div>
@@ -40,7 +40,7 @@ const Services = () => {
                             Learn More
                         </button>
                     </div>
-                    <div className="bg-white bg-opacity-70 p-10 rounded-lg text-center shadow-lg max-w-sm mx-auto">
+                    <div className="bg-white bg-opacity-70 p-10 rounded-lg text-center shadow-lg  mx-auto">
                         <div className="mb-4">
                             <img className="w-24 mx-auto border-4 border-[#12CBC4] rounded-full p-2" src={servicescaerd3} alt="Service Icon" />
                         </div>
@@ -50,7 +50,7 @@ const Services = () => {
                             Learn More
                         </button>
                     </div>
-                    <div className="bg-white bg-opacity-70 p-10 rounded-lg text-center shadow-lg max-w-sm mx-auto">
+                    <div className="bg-white bg-opacity-70 p-10 rounded-lg text-center shadow-lg  mx-auto">
                         <div className="mb-4">
                             <img className="w-24 mx-auto border-4 border-[#12CBC4] rounded-full p-2" src={servicescaerd4} alt="Service Icon" />
                         </div>
@@ -60,7 +60,7 @@ const Services = () => {
                             Learn More
                         </button>
                     </div>
-                    <div className="bg-white bg-opacity-70 p-10 rounded-lg text-center shadow-lg max-w-sm mx-auto">
+                    <div className="bg-white bg-opacity-70 p-10 rounded-lg text-center shadow-lg  mx-auto">
                         <div className="mb-4">
                             <img className="w-24 mx-auto border-4 border-[#12CBC4] rounded-full p-2" src={servicescaerd5} alt="Service Icon" />
                         </div>
@@ -70,7 +70,7 @@ const Services = () => {
                             Learn More
                         </button>
                     </div>
-                    <div className="bg-white bg-opacity-70 p-10 rounded-lg text-center shadow-lg max-w-sm mx-auto">
+                    <div className="bg-white bg-opacity-70 p-10 rounded-lg text-center shadow-lg  mx-auto">
                         <div className="mb-4">
                             <img className="w-24 mx-auto border-4 border-[#12CBC4] rounded-full p-2" src={servicescaerd6} alt="Service Icon" />
                         </div>
