@@ -1,6 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Navbar from '../Pages/Navbar/Navbar';
+import Footer from '../Pages/Footer';
 
 const Root = () => {
     return (
@@ -9,7 +10,7 @@ const Root = () => {
             <div className='min-h-[calc(100vh-60px)]'>
                 <Outlet />
             </div>
-            {/* <Footer></Footer> */}
+            <Footer></Footer>
         </div>
     );
 };
