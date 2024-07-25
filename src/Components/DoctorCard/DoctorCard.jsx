@@ -13,13 +13,13 @@ const DoctorCard = ({ image, name, specialty }) => {
                         <div className="absolute inset-0 bg-[#12CBC4] rounded-lg bg-opacity-75 opacity-0 group-hover:opacity-80 flex items-center justify-center transition-opacity duration-300">
                             <div className="text-center text-white">
                                 <div className="flex justify-center mt-4">
-                                    <a href="#" className="mx-2 text-xl text-white hover:text-gray-300">
+                                    <a href="#" className="mx-2 text-2xl text-white hover:text-gray-300">
                                         <FaFacebookF />
                                     </a>
-                                    <a href="#" className="mx-2 text-xl text-white hover:text-gray-300">
+                                    <a href="#" className="mx-2 text-2xl text-white hover:text-gray-300">
                                         <FaTwitter />
                                     </a>
-                                    <a href="#" className="mx-2 text-xl text-white hover:text-gray-300">
+                                    <a href="#" className="mx-2 text-2xl text-white hover:text-gray-300">
                                         <FaLinkedinIn />
                                     </a>
                                 </div>

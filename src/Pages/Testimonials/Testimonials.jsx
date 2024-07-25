@@ -151,24 +151,24 @@ const Testimonials = () => {
     ];
 
     return (
-        <div style={{ backgroundImage: `url(${testimonialbg})` }} className="py-8 md:px-8 px-4 mb-5">
-            <div className='mx-auto text-center mb-10'>
+        <div style={{ backgroundImage: `url(${testimonialbg})` }} className="py-8  mb-5">
+            <div className='mx-auto text-center mb-8'>
                 <p className='text-[#12CBC4] mb-4 font-semibold'>Testimonial</p>
                 <h1 className='lg:text-3xl text-2xl text-[#130f40] font-bold mb-4'>
                     See What The Patients Saying <br></br> About Us
                 </h1>
             </div>
 
-            <div className='max-w-screen-md mx-auto px-10 py-6 bg-white bg-opacity-70  relative shadow-xl shadow-[0 4px 8px rgba(0, 0, 0, 0.5)]'>
+            <div className='md:max-w-3xl  mx-auto  py-5 relative px-10'>
                 <Slider {...settings}>
                     {testimonialsText.map((testimonial, index) => (
-                        <div key={index} className=" px-10">
+                        <div key={index} className="p-6 bg-white bg-opacity-70 ">
                             <img className="w-32 h-32 object-cover rounded-full " src={testimonial.image} alt={testimonial.name} />
-                            <div className="mt-5">
-                                <p className="mb-4"><span className="text-xl"><FaQuoteLeft /></span>{testimonial.text}</p>
-                                <p className="font-bold text-2xl">{testimonial.name}</p>
-                                <p className="text-sm">Patient</p>
+                            <div className="mb-5">
+                                <i className="text-[#525252]"><span className="text-xl"><FaQuoteLeft /></span>{testimonial.text}</i>
                             </div>
+                            <p className="font-bold text-2xl text-[#130f40]">{testimonial.name}</p>
+                            <p className="text-sm text-[#12CBC4] ">Patient</p>
                         </div>
                     ))}
                 </Slider>
