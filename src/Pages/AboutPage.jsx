@@ -9,7 +9,7 @@ const AboutPage = () => {
             <PageTopPages
                 image={aboutphoto}
                 title="About Us"
-                subtitle={<span><Link to="/">Home</Link> / About Us</span>}
+                subtitle={<span><Link className='hover:text-[#f39c12]' to="/">Home </Link> / About Us</span>}
             />
         </div>
     );
