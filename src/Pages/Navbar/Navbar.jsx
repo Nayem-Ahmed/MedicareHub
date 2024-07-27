@@ -17,7 +17,7 @@ const Navbar = () => {
                         <li><NavLink to={`/pages`}>Pages</NavLink></li>
                         <li><NavLink to={`/about`}>About</NavLink></li>
                         <li><NavLink to={`/services`}>Services</NavLink></li>
-                        <li><NavLink to={`/doctor`}>Doctor</NavLink></li>
+                        <li><NavLink to={`/blog`}>Blog</NavLink></li>
                         <li><NavLink to={`/contact`}>Contact</NavLink></li>
                         <label htmlFor="check" className="close-menu"><FaTimes/></label>
                     </span>

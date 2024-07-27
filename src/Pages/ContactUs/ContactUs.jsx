@@ -1,6 +1,6 @@
 import React from 'react';
 import contact from '../../assets/contactUs.webp'
-import { FaLocationArrow ,FaPhoneAlt } from 'react-icons/fa';
+import { FaLocationArrow, FaPhoneAlt } from 'react-icons/fa';
 import { TfiEmail } from "react-icons/tfi";
 
 
@@ -65,27 +65,27 @@ const ContactUs = () => {
                         <img className=' object-cover w-full h-full' src={contact} alt="" />
                         <div className="absolute inset-0 bg-black opacity-50"></div> {/* Overlay */}
                         <div className="absolute top-0 flex flex-col   justify-center text-white">
-                             <div className='flex items-center gap-5 p-5'>
+                            <div className='flex items-center gap-5 p-5'>
                                 <span className='text-3xl rounded-md p-4 bg-[#12CBC4] '><FaLocationArrow></FaLocationArrow></span>
                                 <div>
-                                <h1 className='font-bold text-xl mb-1'>Our Address</h1>
-                                <p className='text-sm'>PSD Building, 2 AlBahr St, Loskia <br></br> sripur, jamukara.</p>
+                                    <h1 className='font-bold text-xl mb-1'>Our Address</h1>
+                                    <p className='text-sm'>PSD Building, 2 AlBahr St, Loskia <br></br> sripur, jamukara.</p>
                                 </div>
-                             </div>
-                             <div className='flex items-center gap-5 p-5'>
+                            </div>
+                            <div className='flex items-center gap-5 p-5'>
                                 <span className='text-3xl rounded-md p-4 bg-[#12CBC4] '><TfiEmail></TfiEmail></span>
                                 <div>
-                                <h1 className='font-bold text-xl mb-1'>Our Email</h1>
-                                <p className='text-sm'>contact@medicare.com</p>
+                                    <h1 className='font-bold text-xl mb-1'>Our Email</h1>
+                                    <p className='text-sm'>contact@medicare.com</p>
                                 </div>
-                             </div>
-                             <div className='flex items-center gap-5 p-5'>
+                            </div>
+                            <div className='flex items-center gap-5 p-5'>
                                 <span className='text-3xl rounded-md p-4 bg-[#12CBC4] '><FaPhoneAlt></FaPhoneAlt></span>
                                 <div>
-                                <h1 className='font-bold text-xl mb-1'>Our Phone</h1>
-                                <p className='text-sm'>+1 800 123 45 67</p>
+                                    <h1 className='font-bold text-xl mb-1'>Our Phone</h1>
+                                    <p className='text-sm'>+1 800 123 45 67</p>
                                 </div>
-                             </div>
+                            </div>
                         </div>
                     </div>
                 </div>

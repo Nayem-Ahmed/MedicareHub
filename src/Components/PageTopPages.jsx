@@ -1,5 +1,4 @@
 import React from 'react';
-import About from '../Pages/About';
 
 const PageTopPages = ({ image, title, subtitle }) => {
     return (
@@ -16,7 +15,6 @@ const PageTopPages = ({ image, title, subtitle }) => {
                     <h2 className="">{subtitle}</h2>
                 </div>
             </div>
-            <About></About>
         </div>
     );
 };
