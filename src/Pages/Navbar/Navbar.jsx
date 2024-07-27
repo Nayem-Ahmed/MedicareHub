@@ -22,7 +22,7 @@ const Navbar = () => {
                         <label htmlFor="check" className="close-menu"><FaTimes/></label>
                     </span>
                     <label htmlFor="check" className="open-menu"><FaBars/></label>
-                    <Link><Button>Contact Us</Button></Link>
+                    <Link to={'/appointment'}><Button>Appointment</Button></Link>
                 </ul>
             </nav>
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import aboutPic from '../assets/aboutpic.jpg'
 import aboutimgbg from '../assets/about.svg'
 import { FaCheckCircle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 
 const About = () => {
@@ -31,11 +32,13 @@ const About = () => {
                     <li className='flex items-center mb-3'>
                         <div><FaCheckCircle className='text-[#12CBC4] mr-2 text-xl' /></div> <span> Fostering a culture of health and well-being.</span>
                     </li>
- 
+
                 </ul>
-                <button className="lg:px-5 px-3 shadow-2xl shadow-slate-900 md:py-2 py-1 border-b-4  bg-[#f39c12]  font-semibold  text-white border-teal-500 hover:bg-[#12CBC4] active:scale-95 transition-transform ">
-                    About Us
-                </button>
+                <Link to={`/about`}>
+                    <button className="lg:px-5 px-3 shadow-2xl shadow-slate-900 md:py-2 py-1 border-b-4  bg-[#f39c12]  font-semibold  text-white border-teal-500 hover:bg-[#12CBC4] active:scale-95 transition-transform ">
+                        About Us
+                    </button>
+                </Link>
             </div>
         </div>
     );

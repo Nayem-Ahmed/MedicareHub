@@ -3,7 +3,7 @@ import React from 'react';
 const PageTopPages = ({ image, title, subtitle }) => {
     return (
         <div>
-            <div className="relative w-full h-[60vh]">
+            <div className="relative w-full h-[65vh]">
                 <img
                     className='w-full h-full object-cover'
                     src={image}
