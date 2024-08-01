@@ -1,8 +1,9 @@
 import Lottie from 'lottie-react';
 import React from 'react';
 import animation from '../../public/appointment.json'
+import { Link } from 'react-router-dom';
 
-const Appointment = () => {
+const Apointment = () => {
     return (
         <section className="bg-gray-100 md:px-8 px-5 py-10">
             <div className="  mx-auto ">
@@ -67,9 +68,11 @@ const Appointment = () => {
                                 ></textarea>
                             </div>
                             <div className="text-center">
-                                <button type='submit' className="lg:px-4 px-2 shadow-2xl shadow-slate-900 md:py-2 py-1 border-b-4 bg-[#f39c12] font-semibold text-white border-teal-500 hover:bg-[#12CBC4] active:scale-95 transition-transform ">
-                                    Book An Appointment
-                                </button>
+                                <Link>
+                                    <button type='submit' className="lg:px-4 px-2 shadow-2xl shadow-slate-900 md:py-2 py-1 border-b-4 bg-[#f39c12] font-semibold text-white border-teal-500 hover:bg-[#12CBC4] active:scale-95 transition-transform ">
+                                        Book An Appointment
+                                    </button>
+                                </Link>
                             </div>
                         </form>
                     </div>
@@ -84,4 +87,4 @@ const Appointment = () => {
     );
 };
 
-export default Appointment;
+export default Apointment;

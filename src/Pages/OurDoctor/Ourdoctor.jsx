@@ -57,12 +57,13 @@
 
 // export default Ourdoctor;
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import d1 from '../../assets/D1.webp'
 import d2 from '../../assets/D4.jpg'
 import d3 from '../../assets/D3.jpg'
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import DoctorCard from '../../Components/DoctorCard/DoctorCard';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const doctors = [
     {
@@ -83,6 +84,11 @@ const doctors = [
 ];
 
 const Ourdoctor = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1200,
+        });
+    }, [])
     return (
         <div className='md:px-8 px-5 my-10'>
             <div className='max-w-xl mx-auto text-center mb-12'>
@@ -92,7 +98,7 @@ const Ourdoctor = () => {
                     We recognize that each patient is unique, and we are committed to providing personalized services to meet your specific health needs.
                 </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div data-aos="fade-up" className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 {doctors.map((doctor, index) => (
                     <DoctorCard key={index} image={doctor.image} name={doctor.name} specialty={doctor.specialty} />
                 ))}

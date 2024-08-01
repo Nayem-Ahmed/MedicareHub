@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "icon": "surgeon.png",
+    "image": "image1.png",
+    "heading": "Surgery",
+    "title": "Comprehensive Cardiology Surgery Services Including Diagnostics, Treatment, and Rehabilitation",
+    "description": "Our surgery department offers comprehensive heart care services including diagnostics, treatment, and rehabilitation. Our team of experienced cardiologists is dedicated to providing personalized care to each patient, ensuring the best possible outcomes."
+  },
+  {
+    "id": 2,
+    "icon": "stethoscope.png",
+    "image": "image2.png",
+    "heading": "Diagnostics",
+    "title": "Advanced Neurology Services Specializing in Diagnosis and Treatment of Neurological Disorders",
+    "description": "Our neurology department specializes in the diagnosis and treatment of a wide range of neurological disorders. We utilize the latest technology and research to provide advanced care for conditions such as stroke, epilepsy, and multiple sclerosis, ensuring our patients receive the best possible care."
+  },
+  {
+    "id": 3,
+    "icon": "vaccine.png",
+    "image": "image3.png",
+    "heading": "Vaccine",
+    "title": "Expert Orthopedic Services for Musculoskeletal Conditions, Sports Injuries, and Joint Replacements",
+    "description": "Our orthopedic department provides expert care for musculoskeletal conditions. From sports injuries to joint replacements, our team of skilled orthopedic surgeons and therapists work together to offer comprehensive treatment plans tailored to each patient's needs."
+  },
+  {
+    "id": 4,
+    "icon": "medical.png",
+    "image": "image4.png",
+    "heading": "Medicine",
+    "title": "Comprehensive Pediatric Services from Routine Check-Ups to Specialized Care for Chronic Conditions",
+    "description": "Our pediatric department is dedicated to the health and well-being of children. We offer a full range of services from routine check-ups to specialized care for chronic conditions. Our compassionate pediatricians and staff are committed to providing a safe and nurturing environment for our young patients."
+  },
+  {
+    "id": 5,
+    "icon": "liver.png",
+    "image": "image5.png",
+    "heading": "Liver Transport",
+    "title": "Comprehensive Dermatology Services for Skin, Hair, and Nail Conditions Including Acne and Skin Cancer",
+    "description": "Our dermatology department offers comprehensive care for skin, hair, and nail conditions. From acne treatment to skin cancer screenings, our experienced dermatologists use the latest techniques to provide effective and personalized care for all skin types."
+  },
+  {
+    "id": 6,
+    "icon": "arthritis.png",
+    "image": "image6.png",
+    "heading": "Orthopedic",
+    "title": "Comprehensive Oncology Services Including Chemotherapy, Radiation Therapy, and Surgical Options",
+    "description": "Our oncology department is dedicated to the treatment and care of patients with cancer. We provide a multidisciplinary approach to cancer care, including chemotherapy, radiation therapy, and surgical options. Our team of oncologists, nurses, and support staff work together to offer compassionate and comprehensive care to our patients."
+  }
+]

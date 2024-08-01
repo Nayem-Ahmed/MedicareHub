@@ -1,13 +1,41 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
+
 import servicesbg from '../assets/servicesbg.svg';
-import servicescaerd1 from '../assets/surgeon.png';
-import servicescaerd2 from '../assets/stethoscope.png';
-import servicescaerd3 from '../assets/vaccine.png';
-import servicescaerd4 from '../assets/medical.png';
-import servicescaerd5 from '../assets/liver.png';
-import servicescaerd6 from '../assets/arthritis.png';
+// Importing individual icons
+import servicesicon1 from '../assets/surgeon.png';
+import servicesicon2 from '../assets/stethoscope.png';
+import servicesicon3 from '../assets/vaccine.png';
+import servicesicon4 from '../assets/medical.png';
+import servicesicon5 from '../assets/liver.png';
+import servicesicon6 from '../assets/arthritis.png';
 
 const Services = () => {
+    const [servicesData, setServicesData] = useState();
+    
+    useEffect(() => {
+        AOS.init({
+            duration: 1200,
+        });
+    }, [])
+
+    useEffect(() => {
+        fetch('/services.json')
+            .then(res => res.json())
+            .then(servicesData => setServicesData(servicesData))
+    }, [])
+
+    // Mapping icon names to imported icons
+    const iconMap = {
+        'surgeon.png': servicesicon1,
+        'stethoscope.png': servicesicon2,
+        'vaccine.png': servicesicon3,
+        'medical.png': servicesicon4,
+        'liver.png': servicesicon5,
+        'arthritis.png': servicesicon6
+    };
     return (
         <div style={{ backgroundImage: `url(${servicesbg})` }} className='md:px-8 px-5 bg-cover bg-center'>
             <div className='py-5'>
@@ -20,66 +48,27 @@ const Services = () => {
                 </div>
 
                 <div className='grid md:grid-cols-3 grid-cols-1  gap-5 mt-10'>
-                    <div className="bg-white bg-opacity-70 p-10 rounded-lg text-center shadow-lg  mx-auto">
-                        <div className="mb-4">
-                            <img className="w-24 mx-auto border-4 border-[#12CBC4] rounded-full p-2" src={servicescaerd1} alt="Service Icon" />
-                        </div>
-                        <h1 className="text-2xl text-[#130f40] font-bold mb-4">Surgery</h1>
-                        <p className="text-[#525252] mb-6">We provide a range of high-quality medical services tailored to your needs.</p>
-                        <button className="px-6 py-3 mt-4 text-[#12CBC4] bg-white border border-[#12CBC4] rounded-md hover:bg-[#12CBC4] hover:text-white transition-all duration-200">
-                            Learn More
-                        </button>
-                    </div>
-                    <div className="bg-white bg-opacity-70 p-10 rounded-lg text-center shadow-lg  mx-auto">
-                        <div className="mb-4">
-                            <img className="w-24 mx-auto border-4 border-[#12CBC4] rounded-full p-2" src={servicescaerd2} alt="Service Icon" />
-                        </div>
-                        <h1 className="text-2xl text-[#130f40] font-bold mb-4">Diagnostics</h1>
-                        <p className="text-[#525252] mb-6">We provide a range of high-quality medical services tailored to your needs.</p>
-                        <button className="px-6 py-3 mt-4 text-[#12CBC4] bg-white border border-[#12CBC4] rounded-md hover:bg-[#12CBC4] hover:text-white transition-all duration-200">
-                            Learn More
-                        </button>
-                    </div>
-                    <div className="bg-white bg-opacity-70 p-10 rounded-lg text-center shadow-lg  mx-auto">
-                        <div className="mb-4">
-                            <img className="w-24 mx-auto border-4 border-[#12CBC4] rounded-full p-2" src={servicescaerd3} alt="Service Icon" />
-                        </div>
-                        <h1 className="text-2xl text-[#130f40] font-bold mb-4">Vaccine</h1>
-                        <p className="text-gray-700 mb-6">We provide a range of high-quality medical services tailored to your needs.</p>
-                        <button className="px-6 py-3 mt-4 text-[#12CBC4] bg-white border border-[#12CBC4] rounded-md hover:bg-[#12CBC4] hover:text-white transition-all duration-200">
-                            Learn More
-                        </button>
-                    </div>
-                    <div className="bg-white bg-opacity-70 p-10 rounded-lg text-center shadow-lg  mx-auto">
-                        <div className="mb-4">
-                            <img className="w-24 mx-auto border-4 border-[#12CBC4] rounded-full p-2" src={servicescaerd4} alt="Service Icon" />
-                        </div>
-                        <h1 className="text-2xl text-[#130f40] font-bold mb-4">Medicine</h1>
-                        <p className="text-[#525252] mb-6">We provide a range of high-quality medical services tailored to your needs.</p>
-                        <button className="px-6 py-3 mt-4 text-[#12CBC4] bg-white border border-[#12CBC4] rounded-md hover:bg-[#12CBC4] hover:text-white transition-all duration-200">
-                            Learn More
-                        </button>
-                    </div>
-                    <div className="bg-white bg-opacity-70 p-10 rounded-lg text-center shadow-lg  mx-auto">
-                        <div className="mb-4">
-                            <img className="w-24 mx-auto border-4 border-[#12CBC4] rounded-full p-2" src={servicescaerd5} alt="Service Icon" />
-                        </div>
-                        <h1 className="text-2xl text-[#130f40] font-bold mb-4">Liver Transport</h1>
-                        <p className="text-[#525252] mb-6">We provide a range of high-quality medical services tailored to your needs.</p>
-                        <button className="px-6 py-3 mt-4 text-[#12CBC4] bg-white border border-[#12CBC4] rounded-md hover:bg-[#12CBC4] hover:text-white transition-all duration-200">
-                            Learn More
-                        </button>
-                    </div>
-                    <div className="bg-white bg-opacity-70 p-10 rounded-lg text-center shadow-lg  mx-auto">
-                        <div className="mb-4">
-                            <img className="w-24 mx-auto border-4 border-[#12CBC4] rounded-full p-2" src={servicescaerd6} alt="Service Icon" />
-                        </div>
-                        <h1 className="text-2xl text-[#130f40] font-bold mb-4">Orthopedic</h1>
-                        <p className="text-[#525252] mb-6">We provide a range of high-quality medical services tailored to your needs.</p>
-                        <button className="px-6 py-3 mt-4 text-[#12CBC4] bg-white border border-[#12CBC4] rounded-md hover:bg-[#12CBC4] hover:text-white transition-all duration-200">
-                            Learn More
-                        </button>
-                    </div>
+
+                    {
+                        servicesData?.map(service => (
+                            <div key={service.id} data-aos="fade-up" className="bg-white bg-opacity-70 p-10 rounded-lg text-center shadow-lg mx-auto flex flex-col justify-between">
+                                <div>
+                                    <div className="mb-4">
+                                        <img className="w-24 mx-auto border-4 border-[#12CBC4] rounded-full p-2" src={iconMap[service.icon]} alt="Service Icon" />
+                                    </div>
+                                    <h1 className="text-2xl text-[#130f40] font-bold mb-3">{service.heading}</h1>
+                                    <p className="text-[#525252] mb-4">{service.title}</p>
+                                </div>
+                                <div className="flex justify-center mt-auto">
+                                    <Link to={`/servicesDetails/${service.id}`}>
+                                        <button className="px-6 py-3 text-[#12CBC4] bg-white border border-[#12CBC4] rounded-md hover:bg-[#12CBC4] hover:text-white transition-all duration-200">
+                                            Learn More
+                                        </button>
+                                    </Link>
+                                </div>
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
         </div>
