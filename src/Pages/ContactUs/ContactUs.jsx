@@ -33,19 +33,19 @@ const ContactUs = () => {
                                         placeholder="Your Name" />
                                 </div>
                                 <div className="w-full px-2 mb-5">
-                                    <input className="w-full px-3 py-3 bg-teal-50  rounded-md focus:outline-none focus:border-teal-500" type="email" id="email" placeholder="Your Email" />
+                                    <input className="w-full px-3 py-3 bg-teal-50  rounded-md focus:outline-none focus:border-[#12CBC4]" type="email" id="email" placeholder="Your Email" />
                                 </div>
                             </div>
 
                             <div className=" flex-wrap -mx-2 mb-4">
                                 <div className="w-full  px-2 mb-5 ">
-                                    <input required className="w-full px-3 py-3 bg-teal-50  rounded-md focus:outline-none focus:border-teal-500" type="tel" id="phone" placeholder="Your Phone Number" />
+                                    <input required className="w-full px-3 py-3 bg-teal-50  rounded-md focus:outline-none focus:border-[#12CBC4]" type="tel" id="phone" placeholder="Your Phone Number" />
                                 </div>
                             </div>
                             <div className=" flex-wrap -mx-2 mb-5">
                                 <div className="w-full px-2">
                                     <select
-                                        className="w-full px-3 py-3 bg-teal-50  rounded-md focus:outline-none focus:border-teal-500"
+                                        className="w-full px-3 py-3 bg-teal-50  rounded-md focus:outline-none focus:border-[#12CBC4]"
                                         id="department"
                                     >
                                         <option value="">Select Department</option>
@@ -59,7 +59,7 @@ const ContactUs = () => {
                             </div>
                             <div className="mb-5">
                                 <textarea
-                                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-teal-500"
+                                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-[#12CBC4]"
                                     id="message"
                                     rows="4"
                                     placeholder="Your Message"
