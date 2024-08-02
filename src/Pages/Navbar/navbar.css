@@ -13,6 +13,7 @@
       justify-content: space-between;
       align-items: center;
       list-style: none;
+      position: relative;
       background-color: var(--color2);
       padding: 12px 20px;
   }

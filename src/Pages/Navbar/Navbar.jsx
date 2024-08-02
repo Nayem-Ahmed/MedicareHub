@@ -8,8 +8,7 @@ import Headroom from 'react-headroom';
 
 const Navbar = () => {
     return (
-        <Headroom className='relative z-50'>
-
+ 
             <nav>
                 <ul className='nav-bar'>
                     <li className='logo'><Link to={`/`}><img src={logo} /></Link></li>
@@ -26,7 +25,7 @@ const Navbar = () => {
                     <Link to={'/appointment'}><Button>Appointment</Button></Link>
                 </ul>
             </nav>
-        </Headroom>
+ 
     );
 };
 

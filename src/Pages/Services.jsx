@@ -13,8 +13,8 @@ import servicesicon5 from '../assets/liver.png';
 import servicesicon6 from '../assets/arthritis.png';
 
 const Services = () => {
-    const [servicesData, setServicesData] = useState();
-    
+    const [servicesData, setServicesData] = useState([]);
+
     useEffect(() => {
         AOS.init({
             duration: 1200,
@@ -46,7 +46,6 @@ const Services = () => {
                         We understand that each patient is different, and we strive to offer services that are specifically designed to meet your individual health requirements.
                     </p>
                 </div>
-
                 <div className='grid md:grid-cols-3 grid-cols-1  gap-5 mt-10'>
 
                     {
