@@ -1,6 +1,6 @@
 # Live link : https://medicare-hub.surge.sh/
 
- Technology Stack:
+ Technology Stack:-
 
 Tailwind CSS: For creating modern, responsive, and customizable UI components.
 React: To build a dynamic and interactive front-end user interface.
